@@ -6,7 +6,7 @@ This project focuses on building a data warehouse using the Medallion Architectu
 
 
 ## Project Structure
-<img width="3616" height="2044" alt="image" src="https://github.com/user-attachments/assets/0e87a262-d894-4e1b-9902-5faa26e0d764" />
+<img width="3651" height="2044" alt="dwh_project_structure" src="https://github.com/user-attachments/assets/a39a192b-32cb-4471-b631-dd5e77310e20" />
 
 
 ## Datasets
