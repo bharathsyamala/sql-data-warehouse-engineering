@@ -2,10 +2,7 @@
 
 This script creates the tables required to store data from the source systems: CRM and ERP.
 
-In PostgreSQL, it's not possible to import data into tables from CSV files using standard method such as copy or \copy in IDEs such as pgAdmin, DBeaver, or VSCode with postgresql libraries. 
-
-Therefore, the commands required to perform the loading are given at the end, after the table creation commands in the script.
-
+The structure of the tables is derived from analyzing the data within the CSV files.
 
 */
 
