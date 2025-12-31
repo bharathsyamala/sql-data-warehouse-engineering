@@ -76,7 +76,7 @@ SELECT
     TO_DATE(prd_start_dt, 'YYYY-MM-DD')          AS prd_start_dt,
     DATE(
         TO_DATE(
-            LEAD(prd_end_dt) OVER (
+            LEAD(prd_start_dt) OVER (
                 PARTITION BY prd_key
                 ORDER BY prd_start_dt
             ),
