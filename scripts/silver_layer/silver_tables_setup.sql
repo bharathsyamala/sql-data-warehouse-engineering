@@ -68,7 +68,7 @@ drop table if EXISTS silver.erp_CUST_AZ12;
 
 create table silver.erp_CUST_AZ12(
     CID VARCHAR(25),
-    BDATE TEXT,
+    BDATE DATE,
     GEN VARCHAR(10),
     dwh_create_date TIMESTAMP DEFAULT current_timestamp
 );
