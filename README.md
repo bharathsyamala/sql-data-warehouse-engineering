@@ -2,7 +2,9 @@
 
 
 ## Objective
-This project focuses on building a data warehouse using the Medallion Architecture, and includes extraction, loading, and transformation of raw data into business specific data marts and analytics.
+This project implements a layered data warehouse using PostgreSQL, following a Bronze–Silver–Gold architecture to transform raw CRM and ERP extracts into analytics-ready datasets.
+
+The design mirrors real-world enterprise data platforms, separating raw ingestion, data curation, and business consumption into clearly defined layers.
 
 
 ## Project Structure
@@ -44,8 +46,22 @@ SQL Data Warehouse Engineering
 ```
 
 
-## Datasets
-The data used in this project is of sales and are sourced from CRM and ERP systems as CSV files.
+## Source Systems
+The warehouse ingests structured CSV extracts from two upstream systems:
+
+### CRM
+
+- Customer master data
+- Product master data
+- Sales transaction data
+
+### ERP
+
+- Customer reference data
+- Location data
+- Product category metadata
+
+These source files simulate operational system outputs and act as the system-of-record inputs to the warehouse.
 
 
 ## Data Flow
